@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "risktests"
 version = "0.1.0"
-description = ""
-authors = ["at621 <anton.treialt@aistat.com>"]
+description = "Test for credit risk validation"
+authors = ["Anton Treialt"]
 license = "MIT"
 
 [tool.poetry.dependencies]

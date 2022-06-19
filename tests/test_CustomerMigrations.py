@@ -1,4 +1,4 @@
-import credit_risk_validation_tests.Customer_migrations as CM
+import risktests.Customer_migrations as CM
 import pytest
 import pandas as pd
 import os

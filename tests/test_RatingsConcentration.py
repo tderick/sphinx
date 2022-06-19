@@ -1,4 +1,4 @@
-import credit_risk_validation_tests.Concentration_of_Rating_Grades as RC
+import risktests.Concentration_of_Rating_Grades as RC
 import pytest
 import pandas as pd
 import os

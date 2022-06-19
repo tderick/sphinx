@@ -1,4 +1,4 @@
-import credit_risk_validation_tests.LGD_t_test as LGD
+import risktests.LGD_t_test as LGD
 import pytest
 import pandas as pd
 import os

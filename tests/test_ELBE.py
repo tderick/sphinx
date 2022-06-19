@@ -1,4 +1,4 @@
-import credit_risk_validation_tests.Expected_Loss_Best_Estimate_t_test as ELBE
+import risktests.Expected_Loss_Best_Estimate_t_test as ELBE
 import pytest
 import pandas as pd
 import os

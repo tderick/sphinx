@@ -1,4 +1,4 @@
-import credit_risk_validation_tests.Jeffreys_test as JT
+import risktests.Jeffreys_test as JT
 import pytest
 import pandas as pd
 import os
