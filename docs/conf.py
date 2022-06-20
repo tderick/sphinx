@@ -88,33 +88,21 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 # html_theme = 'alabaster'
-#html_theme = 'sphinx_rtd_theme'
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'sphinx_rtd_theme'
+# html_theme = 'pydata_sphinx_theme'
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.  For a list of options available for each theme, see the
 # documentation.
 #
 # html_theme_options = {}
+
 html_theme_options = {
-  "show_nav_level": 2,
-  "logo": {
-        "text": "Credit Risk Validation Tests",
-    },
-  "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/at621/risktests",
-            "icon": "fab fa-github-square",
-            "type": "fontawesome",
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/<your-handle>",
-            "icon": "fab fa-twitter-square",
-            # The default for `type` is `fontawesome` so it is not actually required in any of the above examples as it is shown here
-        }
-    ],
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -185,5 +173,6 @@ texinfo_documents = [
 ]
 
 
-
+autoapi_type = 'python'
 autoapi_dirs = ["../risktests"]
+autoapi_add_toctree_entry=False

@@ -30,7 +30,7 @@ https://github.com/aistat/credit-tests
 Binary installers for the latest released version are available at the [Python
 Package Index (PyPI)](https://pypi.org/project/credit-tests).
 
-.. code-block:: python
+.. code-block:: console
 
     $ pip install credit-tests 
 

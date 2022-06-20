@@ -7,6 +7,7 @@
    usage
    authors
    history
+   /autoapi/risktests/index
 
 Welcome to Credit Risk Validation Tests's documentation!
 ========================================================
