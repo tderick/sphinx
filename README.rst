@@ -5,7 +5,9 @@ About credit-tests
 
 The contributors started built their first statistical models in 2003. Over the years, the same tests have been implemented leading to inefficient usage of resources.
 
-## Main Features
+Main Features
+**************
+
 This is the list of main features:
 
   - tests cover both IFRS 9 and IRB models as well as non-regulatory models
@@ -19,19 +21,27 @@ This is the list of main features:
 
 
 
-## Where to get it
+Where to get it
+****************
+
 The source code is hosted on GitHub at:
 https://github.com/aistat/credit-tests
 
 Binary installers for the latest released version are available at the [Python
 Package Index (PyPI)](https://pypi.org/project/credit-tests).
 
-<code> pip install credit-tests </code>
+.. code-block:: python
 
-## Documentation
+    $ pip install credit-tests 
+
+Documentation
+*************
+
 The official documentation is hosted on pydocs.org: https://aistat.com
 
-## Dependencies
+Dependencies
+************
+
 - [NumPy - Adds support multi-dimensional arrays and high-level mathematical functions to operate on these arrays](https://www.numpy.org)
 - [pandas - fundamental building block for doing practical, real world data analysis in Python](https://www.numpy.org)
 - [statsmodels - provides functionality for the estimation of many different statistical models and tests](https://www.numpy.org)
@@ -39,11 +49,14 @@ The official documentation is hosted on pydocs.org: https://aistat.com
 
 
 
-## Getting Help
+Getting Help
+************
 
 For usage questions, the best thing is to send an email to anton.treialt@aistat.com
 
-## Contributing to credit-tests
+Contributing to credit-tests
+*****************************
+
 All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
 
 If you want to contribute to credit-tests, please review the
@@ -53,5 +66,7 @@ tracking requests and bugs.
 
 
 
-## License
+License
+********
+
 [MIT](LICENSE)
