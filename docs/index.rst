@@ -1,5 +1,5 @@
 Welcome to Credit Risk Validation Tests's documentation!
-======================================
+========================================================
 
 .. toctree::
    :maxdepth: 2
@@ -7,9 +7,8 @@ Welcome to Credit Risk Validation Tests's documentation!
 
    readme
    installation
-   usage
-   modules
    contributing
+   usage
    authors
    history
 
