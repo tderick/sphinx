@@ -100,7 +100,21 @@ html_theme_options = {
   "show_nav_level": 2,
   "logo": {
         "text": "Credit Risk Validation Tests",
-    }
+    },
+  "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/at621/risktests",
+            "icon": "fab fa-github-square",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/<your-handle>",
+            "icon": "fab fa-twitter-square",
+            # The default for `type` is `fontawesome` so it is not actually required in any of the above examples as it is shown here
+        }
+    ],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
