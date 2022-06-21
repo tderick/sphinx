@@ -19,7 +19,7 @@ Welcome to Credit Risk Validation Tests's documentation!
    autoapi/risktests/index
    
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
    :caption: Notebook
 
    reamde
