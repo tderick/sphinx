@@ -1,0 +1,13 @@
+#submodules h2 {
+     color: blue !important;
+}
+
+#submodules li {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.toctree-l1{
+    font-size: 20px;
+    line-height: 1.6;
+}
