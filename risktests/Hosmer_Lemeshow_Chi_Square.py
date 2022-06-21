@@ -52,14 +52,24 @@ class Hosmer_Lemeshow_Chi_Square:
     If verbose is set to True, the test results and interpretation will be printed, the default is False.
 
     alpha must be set otherwise a TypeError is raised.
-    :param
+    
+    
+    Parameters
+    ----------
     data : array_like, 3-D of higher
-    buckets_col : name of column with buckets
-    loan_status_col : name of column with loan statuses
-    PDs_col : name of column with probabilities-of-default
-    alpha: the tests level of significance. either 1%, 5% or 10%
-    verbose: boolean. Prints the results if true.
-    :return
+    buckets_col : 
+        name of column with buckets
+    loan_status_col : 
+        name of column with loan statuses
+    PDs_col : 
+        name of column with probabilities-of-default
+    alpha: 
+        the tests level of significance. either 1%, 5% or 10%
+    verbose: boolean. 
+        Prints the results if true.
+    
+    Returns
+    -------
     data: data passed into the function call
     bucket_levels: unique buckets in the data
     HLC_stat: Hosmer-Lemeshow test statistic
@@ -71,39 +81,43 @@ class Hosmer_Lemeshow_Chi_Square:
 
     EXAMPLE
     -------
-    >>import Hosmer_Lemeshow_Chi_Square as HLC
-    >>import pandas as pd
-    >>import numpy as np
+    .. highlight:: python
+    .. code-block:: python
+    
+        >>import Hosmer_Lemeshow_Chi_Square as HLC
+        >>import pandas as pd
+        >>import numpy as np
 
-    >># Sampling the buckets randomly at fixed probabilities
-    >>buckets = np.random.choice(a=["Bucket one","Bucket two","Bucket three","Bucket four","Bucket five"], p = [0.15,0.25,0.05,0.05,0.5], size=1000)
-    >>loan_status = np.random.choice(a=["default", "non-default"], p=[0.3,0.7], size=1000)
+        >># Sampling the buckets randomly at fixed probabilities
+        >>buckets = np.random.choice(a=["Bucket one","Bucket two","Bucket three","Bucket four","Bucket five"], p = [0.15,0.25,0.05,0.05,0.5], size=1000)
+        >>loan_status = np.random.choice(a=["default", "non-default"], p=[0.3,0.7], size=1000)
 
-    >>probs = []
+        >>probs = []
 
-    >>for i in range(len(buckets)):
-    >>    if buckets[i] == 'Bucket one':
-    >>        probs.append(0.15)
-    >>    elif buckets[i] == 'Bucket two':
-    >>        probs.append(0.25)
-    >>    elif buckets[i] == 'Bucket three':
-    >>        probs.append(0.05)
-    >>    elif buckets[i] == 'Bucket four':
-    >>        probs.append(0.05)
-    >>    elif buckets[i] == 'Bucket five':
-    >>        probs.append(0.5)
-    >>
-    >>probs = np.array(probs)
+        >>for i in range(len(buckets)):
+        >>    if buckets[i] == 'Bucket one':
+        >>        probs.append(0.15)
+        >>    elif buckets[i] == 'Bucket two':
+        >>        probs.append(0.25)
+        >>    elif buckets[i] == 'Bucket three':
+        >>        probs.append(0.05)
+        >>    elif buckets[i] == 'Bucket four':
+        >>        probs.append(0.05)
+        >>    elif buckets[i] == 'Bucket five':
+        >>        probs.append(0.5)
+        >>
+        >>probs = np.array(probs)
 
-    >>loan_data = pd.DataFrame({'loan_bucket': buckets,
-    >>                          'loan_status': loan_status,
-    >>                          'PD': probs})
+        >>loan_data = pd.DataFrame({'loan_bucket': buckets,
+        >>                          'loan_status': loan_status,
+        >>                          'PD': probs})
 
 
 
-    >>output = HLC.Hosmer_Lemeshow_Chi_Square(data=loan_data, buckets_col='loan_bucket', loan_statuses_col='loan_status', PDs_col='PD', alpha=0.05, verbose=True)
-    >>output.HLC_stat # Shows the Hower-Lemeshow statistic
-    >>output.p_value # Shows the p-value
+        >>output = HLC.Hosmer_Lemeshow_Chi_Square(data=loan_data, buckets_col='loan_bucket', loan_statuses_col='loan_status', PDs_col='PD', alpha=0.05, verbose=True)
+        >>output.HLC_stat # Shows the Hower-Lemeshow statistic
+        >>output.p_value # Shows the p-value
+        
     """
 
 

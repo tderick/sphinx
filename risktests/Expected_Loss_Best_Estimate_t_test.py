@@ -42,8 +42,12 @@ def elbe_t_test(df, LGD_col, ELBE_col, verbose=False):
 
     Examples
     --------
-    >>res = elbe_t_test(df=df, LGD_col='LGD', ELBE_col='ELBE', verbose=True)
-    >>print(res)
+    .. highlight:: python
+    .. code-block:: python
+        
+        >>res = elbe_t_test(df=df, LGD_col='LGD', ELBE_col='ELBE', verbose=True)
+        >>print(res)
+        
     """
     # Checking for any missing data
     if df.empty:

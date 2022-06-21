@@ -42,8 +42,12 @@ def lgd_t_test(df, observed_LGD_col, expected_LGD_col, verbose=False):
 
     Examples
     --------
-    >>res = lgd_t_test(df=df, observed_LGD_col='LGD', expected_LGD_col='PRED_LGD', verbose=True)
-    >>print(res)
+    .. highlight:: python
+    .. code-block:: python
+    
+        >>res = lgd_t_test(df=df, observed_LGD_col='LGD', expected_LGD_col='PRED_LGD', verbose=True)
+        >>print(res)
+        
     """
     # Checking for any missing data
     if df.empty:

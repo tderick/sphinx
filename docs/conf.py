@@ -176,3 +176,4 @@ texinfo_documents = [
 autoapi_type = 'python'
 autoapi_dirs = ["../risktests"]
 autoapi_add_toctree_entry=False
+suppress_warnings = ["autoapi"]

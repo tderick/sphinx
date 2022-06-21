@@ -34,9 +34,12 @@ def jeffreys_test(df, ratings_col, PDs_col, defaults_col, alpha=0.05):
 
     Examples
     --------
-    >>df = pd.read_excel('sample_data.xlsx')
-    >>outpput = jeffreys_test(df=df, ratings_col='ratings', PDs_col='PD', defaults_col='loan_status', alpha=0.05)
-    >>print(output)
+    .. highlight:: python
+    .. code-block:: python
+    
+        >>df = pd.read_excel('sample_data.xlsx')
+        >>outpput = jeffreys_test(df=df, ratings_col='ratings', PDs_col='PD', defaults_col='loan_status', alpha=0.05)
+        >>print(output)
 
 
     """

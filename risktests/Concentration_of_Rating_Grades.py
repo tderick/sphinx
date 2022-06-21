@@ -36,8 +36,12 @@ def ratings_concentration(df, initial_ratings_col, final_ratings_col):
 
         Examples
         --------
-        >>res = ratings_concentration(df=df, initial_ratings_col='ratings', final_ratings_col='ratings2')
-        >>print(res)
+        .. highlight:: python
+        .. code-block:: python
+        
+            >>res = ratings_concentration(df=df, initial_ratings_col='ratings', final_ratings_col='ratings2')
+            >>print(res)
+            
         """
 
     if df.empty:
