@@ -41,20 +41,7 @@
 {% set visible_classes = visible_children|selectattr("type", "equalto", "class")|list %}
 {% set visible_attributes = visible_children|selectattr("type", "equalto", "data")|list %}
 {% if "show-module-summary" in autoapi_options and (visible_classes or visible_functions) %}
-{% block classes scoped %}
-{% if visible_classes %}
-Classes
-~~~~~~~
 
-.. autoapisummary::
-
-{% for klass in visible_classes %}
-   {{ klass.id }}
-{% endfor %}
-
-
-{% endif %}
-{% endblock %}
 
 {% block functions scoped %}
 {% if visible_functions %}

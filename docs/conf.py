@@ -97,13 +97,13 @@ html_theme = 'sphinx_rtd_theme'
 #
 # html_theme_options = {}
 
-html_theme_options = {
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
-}
+# html_theme_options = {
+#     'collapse_navigation': False,
+#     'sticky_navigation': True,
+#     'navigation_depth': 4,
+#     'includehidden': True,
+#     'titles_only': False
+# }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -186,10 +186,10 @@ autoapi_type = 'python'
 autoapi_dirs = ["../risktests",'../tests']
 autoapi_add_toctree_entry=False
 suppress_warnings = ["autoapi"]
-autoapi_ignore=["_autoapi_templates/python"]
+autoapi_ignore=["_autoapi_templates"]
 autoapi_template_dir = '_autoapi_templates'
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
-add_module_names = False
+# add_module_names = False
 
 
