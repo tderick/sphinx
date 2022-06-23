@@ -17,6 +17,12 @@ Welcome to Credit Risk Validation Tests's documentation!
    :caption: API Reference
    
    autoapi/risktests/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Tests Reference
+   
+   autoapi/tests/index
    
 .. toctree::
    :maxdepth: 0
