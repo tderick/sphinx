@@ -186,6 +186,10 @@ autoapi_type = 'python'
 autoapi_dirs = ["../risktests",'../tests']
 autoapi_add_toctree_entry=False
 suppress_warnings = ["autoapi"]
-autoapi_ignore=["_autoapi_templates"]
+autoapi_ignore=["_autoapi_templates/python"]
 autoapi_template_dir = '_autoapi_templates'
+# If true, the current module name will be prepended to all description
+# unit titles (such as .. function::).
+add_module_names = False
+
 

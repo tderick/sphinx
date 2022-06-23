@@ -7,12 +7,7 @@
 
 .. py:module:: {{ obj.name }}
 
-{% if obj.docstring %}
-.. autoapi-nested-parse::
 
-   {{ obj.docstring|indent(3) }}
-
-{% endif %}
 
 {% block subpackages %}
 {% set visible_subpackages = obj.subpackages|selectattr("display")|list %}
@@ -55,11 +50,10 @@ Submodules
 {% set visible_children = obj.children|selectattr("display")|rejectattr("imported")|list %}
 {% endif %}
 {% if visible_children %}
-{{ obj.type|title }} Contents
+
 {{ "-" * obj.type|length }}---------
 
 {% set visible_classes = visible_children|selectattr("type", "equalto", "class")|list %}
-{% set visible_functions = visible_children|selectattr("type", "equalto", "function")|list %}
 {% set visible_attributes = visible_children|selectattr("type", "equalto", "data")|list %}
 {% if "show-module-summary" in autoapi_options and (visible_classes or visible_functions) %}
 {% block classes scoped %}
