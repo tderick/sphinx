@@ -2,13 +2,18 @@
 :orphan:
 
 {% endif %}
+
+{% set name_length = obj.name.split('.') | length %}
+{% if name_length > 1 %}
+
 :py:mod:`{{ obj.name }}`
 =========={{ "=" * obj.name|length }}
+
 
 .. py:module:: {{ obj.name }}
 
 
-
+{% endif %}
 
 {% block submodules %}
 {% set visible_submodules = obj.submodules|selectattr("display")|list %}
