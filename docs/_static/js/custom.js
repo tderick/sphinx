@@ -1,5 +1,5 @@
 
-// document.addEventListener("DOMContentLoaded", function(event) {
-//     let a = document.querySelectorAll('.xref .py .py-mod .docutils .literal .notranslate')
-//     console.log(a)
-// })
+document.addEventListener("DOMContentLoaded", function(event) {
+    let a = document.querySelector('.wy-breadcrumbs')
+    a.removeChild(a.childNodes[3])
+})

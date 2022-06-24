@@ -12,7 +12,6 @@
 
 .. py:module:: {{ obj.name }}
 
-
 {% endif %}
 
 {% block submodules %}
