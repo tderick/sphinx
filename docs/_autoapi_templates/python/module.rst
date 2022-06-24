@@ -6,7 +6,7 @@
 {% set name_length = obj.name.split('.') | length %}
 {% if name_length > 1 %}
 
-:py:mod:`{{ obj.name }}`
+:py:mod:`{{ obj.name.split('.')[1] }}`
 =========={{ "=" * obj.name|length }}
 
 
